@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>IOMD Testing Site</title>
+    <!-- Load external CSS styles -->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <h1>IOMD Testing Modules based on the sites</h1>
+    <br />
+    <p class="center">***Click Credit Cards to view all Credit card forms***</p>
+    <p class="center">
+      ***Click Address to view all Address Information forms***
+    </p>
+    <!-- Load external JavaScript -->
+    <div class="tab">
+      <button class="tabs tablinks" onclick="openComponent(event,'credit')">
+        <h2><b>CreditCard Information</b></h2>
+      </button>
+      <button class="tabs tablinks" onclick="openComponent(event, 'address')">
+        <h2><b>Address Information</b></h2>
+      </button>
+      <button class="tabs tablinks" onclick="openComponent(event, 'signin')">
+        <h2><b>SignIn Information</b></h2>
+      </button>
+      <button class="tabs tablinks" onclick="openComponent(event, 'signup')">
+        <h2><b>SignUp Information</b></h2>
+      </button>
+      <button class="tabs tablinks" onclick="openComponent(event, 'forget')">
+        <h2><b>Forget Information</b></h2>
+      </button>
+      <button class="tabs tablinks" onclick="openComponent(event, 'hertz')">
+        <h2><b>Hertz</b></h2>
+      </button>
+    </div>
+  </body>
+</html>

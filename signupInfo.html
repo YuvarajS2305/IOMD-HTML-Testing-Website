@@ -1,0 +1,41 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>IOMD Testing Site</title>
+  <!-- Load external CSS styles -->
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="scripts.js"></script>
+</head>
+
+<body>
+
+  <br><br>
+  <h1>
+    <p class="center"><b>SignUp/Register Information</p></b>
+  </h1><br>
+
+  <div id="credit" class="field">
+    <div id="tab">
+      <div id="field" id="credit">
+        <button class="subtab tablinks titlecontent" onclick="openSubComponent(event, 'commerceRegister')"><h2><b>Commerce</h2></b></button>
+       
+      </div>
+    </div>
+    <div id="commerceRegister" class="sub-field" style="display: none;">
+      <form>
+        <h3 class="titlecontent"> <b>
+        Amazon
+       </b> </h3>
+
+        <input type="text" id="ap_customer_name" autocomplete="name" placeholder="First and last name" name="customerName" class="amazon_nameField">
+       <input type="tel" id="ap_phone_number" autocomplete="tel" placeholder="Mobile number" name="email" class="amazon_phoneField" data-validation-id="phoneNumber">
+       <input type="password" id="ap_password" autocomplete="off" placeholder="At least 6 characters" name="password" class="amazon_pwdField"><br><br>
+
+      </form>
+    </div>
+    </body>
+</html>
