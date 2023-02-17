@@ -22,6 +22,9 @@ function openComponent(eve, category) {
       case "hertz":
       fileName = "hertz.html"
       break;
+      case "coravin":
+      fileName = "coravin.html"
+      break;
     }
     window.location.href=fileName;
   var i;
