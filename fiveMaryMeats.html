@@ -48,7 +48,7 @@
                 <div class="form-vertical">
                     <form method="post" action="/account" id="create_customer" accept-charset="UTF-8"
                         data-login-with-shop-sign-up="true"
-                        onsubmit="window.Shopify.recaptchaV3.addToken(this, &quot;create_customer&quot;); return false;">
+                        ><!--onsubmit="window.Shopify.recaptchaV3.addToken(this, &quot;create_customer&quot;); return false;"-->
                         <input type="hidden" name="form_type" value="create_customer"><input type="hidden" name="utf8"
                             value="✓">
 
@@ -76,7 +76,7 @@
             <div id="fivemarymeatssignin" class="sub-field" style="display: none">
                 <form method="post" action="/account/login" id="customer_login" accept-charset="UTF-8"
                     data-login-with-shop-sign-in="true"
-                    onsubmit="window.Shopify.recaptchaV3.addToken(this, &quot;customer_login&quot;); return false;">
+                    ><!--onsubmit="window.Shopify.recaptchaV3.addToken(this, &quot;customer_login&quot;); return false;"-->
                     <input type="hidden" name="form_type" value="customer_login"><input type="hidden" name="utf8"
                         value="✓">
                     <label for="CustomerEmail">Email</label>
@@ -643,7 +643,10 @@
 
             <div id="fivemarymeatsforogotpassword" class="sub-field" style="display: none">
                 <div class="form-vertical">
-                    <form method="post" action="/account/recover" accept-charset="UTF-8" onsubmit="window.Shopify.recaptchaV3.addToken(this, &quot;recover_customer_password&quot;); return false;"><input type="hidden" name="form_type" value="recover_customer_password"><input type="hidden" name="utf8" value="✓">          
+                    <form method="post" action="/account/recover" accept-charset="UTF-8" >
+                        <!--onsubmit="window.Shopify.recaptchaV3.addToken(this, &quot;recover_customer_password&quot;); return false;"-->
+                        <input type="hidden" name="form_type" value="recover_customer_password">
+                        <input type="hidden" name="utf8" value="✓">          
                       <label for="RecoverEmail">Email</label>
                       <input type="email" value="" name="email" id="RecoverEmail" class="input-full" autocorrect="off" autocapitalize="off">          
                     </form>
