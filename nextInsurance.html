@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>IOMD Testing Site</title>
+    <!-- Load external CSS styles -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+
+</head>
+
+<body>
+    <br><br>
+    <h1>
+        <p class="center"><b>Next Insurance</p></b>
+    </h1><br>
+
+    <div id="field" id="address">
+        <button class="subtab tablinks titlecontent" onclick="openSubComponent(event, 'checkout')"><h2><b>Checkout</h2></b></button><br><br>
+      </div>
+
+
+    <div id="checkout" class="sub-field" style="display: none">
+
+            <div _ngcontent-ipi-c140="" class="question ng-tns-c140-13 ng-star-inserted" style="">
+              <ni-question-label _ngcontent-ipi-c140="" class="ng-tns-c140-13" _nghost-ipi-c100="">
+                <label _ngcontent-ipi-c100="" data-test="question-text" class="p-sm_md">First Name <!----></label>
+              </ni-question-label>
+              <input _ngcontent-ipi-c140="" type="text" class="ni-input-rb ng-tns-c140-13 ng-pristine ng-invalid ng-star-inserted ng-touched" maxlength="100">
+            </div>
+      
+            <div _ngcontent-ipi-c140="" data-test="question-wrapper"
+              class="ng-tns-c140-14 question-wrapper ng-trigger ng-trigger-opacityInOut ng-pristine ng-invalid ng-touched"
+              questionname="applicantlastname" data-question-type="text">
+              <div _ngcontent-ipi-c140="" class="question ng-tns-c140-14 ng-star-inserted" style="">
+                <ni-question-label _ngcontent-ipi-c140="" class="ng-tns-c140-14" _nghost-ipi-c100="">
+                  <label _ngcontent-ipi-c100="" data-test="question-text" class="p-sm_md">Last Name <!----></label>
+                </ni-question-label>
+                <input _ngcontent-ipi-c140="" type="text" class="ni-input-rb ng-tns-c140-14 ng-untouched ng-pristine ng-invalid ng-star-inserted" maxlength="100">
+              </div>
+            </div>
+      
+      
+            <div _ngcontent-ipi-c140="" class="question ng-tns-c140-15 ng-star-inserted" style="">
+              <ni-question-label _ngcontent-ipi-c140="" class="ng-tns-c140-15" _nghost-ipi-c100="">
+                <label _ngcontent-ipi-c100="" data-test="question-text" class="p-sm_md">Phone Number <!----></label>
+                <!---->
+              </ni-question-label>
+              <ni-phone _ngcontent-ipi-c140="" class="ng-tns-c140-15 ng-untouched ng-pristine ng-invalid" _nghost-ipi-c137="">
+                <input _ngcontent-ipi-c137="" type="tel" placeholder="(---) --- ----" data-test="phone-input" class="ni-input-rb ng-untouched ng-pristine ng-valid">
+                <div _ngcontent-ipi-c137="" class="sms-consent">
+                  <ni-checkbox-rb _ngcontent-ipi-c137="" data-test="sms-consent-checkbox" _nghost-ipi-c67=""
+                    class="ng-untouched ng-pristine">
+                    <label _ngcontent-ipi-c67="" tabindex="0" class="ni-checkbox-container ni-checkbox-disabled"><input _ngcontent-ipi-c67="" type="checkbox" disabled="">
+                    <span _ngcontent-ipi-c67="" class="ni-checkbox"></span>
+                    <span _ngcontent-ipi-c67="" class="p-sm_md ni-checkbox-label">I consent to receive text messages from NEXT Insurance about products, promotions and services. <!----></span></label>
+                  </ni-checkbox-rb>
+                </div>
+              </ni-phone>
+            </div>
+      
+            <div _ngcontent-ipi-c140="" data-test="question-wrapper"
+              class="ng-tns-c140-16 question-wrapper ng-trigger ng-trigger-opacityInOut ng-pristine ng-invalid ng-touched"
+              questionname="businessname" data-question-type="text">
+              <div _ngcontent-ipi-c140="" class="question ng-tns-c140-16 ng-star-inserted" style="">
+                <ni-question-label _ngcontent-ipi-c140="" class="ng-tns-c140-16" _nghost-ipi-c100="">
+                  <label _ngcontent-ipi-c100="" data-test="question-text" class="p-sm_md">Your legal business name and Doing Business As (will appear on policy): <!----></label>
+                  <div _ngcontent-ipi-c100="" class="question-subtext p-xs_sm ng-star-inserted">Use the legal name of the
+                    business. If the business is just you, use your legal name. If you have a Doing Business As, add it
+                    after the business name or your legal name. (Ex: Joan Smith DBA Joanie’s Repairs; Smith LLC DBA Smith’s
+                    Surf and Turf)</div>
+                </ni-question-label>
+                <input _ngcontent-ipi-c140="" type="text" class="ni-input-rb ng-tns-c140-16 ng-untouched ng-pristine ng-invalid ng-star-inserted" maxlength="100">
+              </div>
+            </div>
+      
+            <div _ngcontent-ipi-c80="" class="form-control-container"
+              questionname="comp/comp_location/v1_0_185/W0NSOkGKzk7MzhuJ:qn_street">
+              <div _ngcontent-ipi-c80="" data-test="street-label" class="form-control-label">
+                <label _ngcontent-ipi-c80="" class="p-sm_md"> Business Address <ni-tooltip-rb _ngcontent-ipi-c80="" _nghost-ipi-c66="" class="ng-star-inserted">
+                  <div _ngcontent-ipi-c66="" class="ni-tooltip-rb-container"><popper-content _ngcontent-ipi-c66="" class="ni-tooltip-rb-bubble-container">
+                    <div class="ngxp__container ngxp__animation ni-tooltip-rb" id="ngx_poppperjs_1" aria-hidden="true" role="popper" style="display: none; opacity: 0;">
+                      <!----><div class="ngxp__inner ng-star-inserted"><div _ngcontent-ipi-c80="" data-test="tooltip-content"> 
+                        We need your street address and zip code (same as your business tax forms) to provide you the right coverage. While we don’t send out much snail mail (we prefer email!), we might occasionally send a second copy of important communications here as well. </div></div>
+                      <!----><div data-popper-arrow="" class="ngxp__arrow ni-tooltip-arrow-rb" style=""></div></div></popper-content>
+                      <!----><div _ngcontent-ipi-c66="" class="popper-content" style="display: inline-block;">
+                        <div _ngcontent-ipi-c66="" class="ni-tooltip-rb-img-container" style="width: 20px; height: 20px;">
+                        <i _ngcontent-ipi-c66="" class="ni-icon-tooltip ng-star-inserted"></i><!----><!----></div></div><!----></div></ni-tooltip-rb><!----><!----></label>
+                <div _ngcontent-ipi-c80="" data-test="street-sublabel" class="form-control-sublabel p-xs_sm"> The primary
+                  physical address, not a mailing address or PO Box. </div>
+              </div>
+              <input _ngcontent-ipi-c80="" type="text" data-input-type="street" class="form-control ni-input-rb ng-untouched ng-pristine ng-invalid" placeholder="Street address and unit/suite #" maxlength="100" data-test="comp/comp_location/v1_0_185/W0NSOkGKzk7MzhuJ:qn_street" autocomplete="disabled">
+              <ul _ngcontent-ipi-c80="" data-test="address-suggestions-list" class="address-suggestions-list" hidden="">
+              </ul>
+            </div>
+          </div>
+
+       
+        </body>
+        </html>
