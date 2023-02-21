@@ -78,6 +78,7 @@ for (var i = 0; i < formsArray.length; i++) {
     e.stopPropagation();
     console.log('form submit');
     // alert("one");
+    confirm("are")
   });
 }
 });
