@@ -1,320 +1,293 @@
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>IOMD Testing Site</title>
-    <!-- Load external CSS styles -->
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <script
-      src="https://code.jquery.com/jquery-1.12.4.min.js"
-      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-      crossorigin="anonymous"
-    ></script>
-    <script src="scripts.js"></script>
-  </head>
 
-  <body
-    class="mm-active mm-gpr-navigation-active mm-gpr-navigation gtm-applied mm-itinerary-active mm-ancillaries-page-active gtm-rb-listeners"
-    style="background-color: rgb(237, 237, 237)"
-  >
-    <br /><br />
-    <h1>
-      <p class="center"><b>Coravin</b></p>
-    </h1>
-    <br />
+<head>
+  <meta charset="utf-8" />
+  <title>IOMD Testing Site</title>
+  <!-- Load external CSS styles -->
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="scripts.js"></script>
+</head>
 
-    <div id="tab">
-      <div id="field" id="credit">
-        <button
-          class="subtab tablinks titlecontent"
-          onclick="openSubComponent(event, 'signup')"
-        >
-          <h2><b>Sign Up</b></h2>
-        </button>
-        <button
-          class="subtab tablinks titlecontent"
-          onclick="openSubComponent(event, 'signin')"
-        >
-          <h2><b>Sign In</b></h2>
-        </button>
-        <button
-          class="subtab tablinks titlecontent"
-          onclick="openSubComponent(event, 'forgotpassword')"
-        >
-          <h2><b>Forgot Password</b></h2>
-        </button>
+<body
+  class="mm-active mm-gpr-navigation-active mm-gpr-navigation gtm-applied mm-itinerary-active mm-ancillaries-page-active gtm-rb-listeners"
+  style="background-color: rgb(237, 237, 237)">
+  <br /><br />
+  <h1>
+    <p class="center"><b>Coravin</b></p>
+  </h1>
+  <br />
+
+  <div id="tab">
+    <div id="field" id="credit">
+      <button class="subtab tablinks titlecontent" onclick="openSubComponent(event, 'signup')">
+        <h2><b>Sign Up</b></h2>
+      </button>
+      <button class="subtab tablinks titlecontent" onclick="openSubComponent(event, 'signin')">
+        <h2><b>Sign In</b></h2>
+      </button>
+      <button class="subtab tablinks titlecontent" onclick="openSubComponent(event, 'forgotpassword')">
+        <h2><b>Forgot Password</b></h2>
+      </button>
+      <button class="subtab tablinks titlecontent" onclick="openSubComponent(event, 'checkout')">
+        <h2><b>Checkout</b></h2>
+      </button>
+      <button class="subtab tablinks titlecontent" onclick="openSubComponent(event, 'card')">
+        <h2><b>Card</b></h2>
+      </button>
+    </div>
+
+    <!-------------------Coravin SignUp---------------------------->
+
+    <div id="signup" class="sub-field" style="display: none">
+      <div class="MuiBox-root jss707">
+        <div class="MuiBox-root jss708"></div>
+        <h2 class="MuiTypography-root jss7 MuiTypography-h5">
+          Create an Account
+        </h2>
+        <div class="MuiBox-root jss709"></div>
+        <form id="create-account" novalidate="" autocomplete="off">
+          <div class="MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal">
+            <label
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined Mui-required Mui-required"
+              data-shrink="false">First Name<span aria-hidden="true"
+                class="MuiFormLabel-asterisk MuiInputLabel-asterisk"> *</span></label>
+            <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl">
+              <input aria-invalid="false" name="firstName" required="" type="text"
+                class="MuiInputBase-input MuiOutlinedInput-input" value="" />
+              <fieldset aria-hidden="true" class="jss279 MuiOutlinedInput-notchedOutline"></fieldset>
+            </div>
+          </div>
+          <div class="MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal">
+            <label
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined Mui-required Mui-required"
+              data-shrink="false">Last Name<span aria-hidden="true"
+                class="MuiFormLabel-asterisk MuiInputLabel-asterisk"> *</span></label>
+            <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl">
+              <input aria-invalid="false" autocomplete="no" name="lastName" required="" type="text"
+                class="MuiInputBase-input MuiOutlinedInput-input" value="" />
+            </div>
+          </div>
+          <div class="MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal">
+            <label
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined Mui-required Mui-required"
+              data-shrink="false">Email<span aria-hidden="true"
+                class="MuiFormLabel-asterisk MuiInputLabel-asterisk"> *</span></label>
+            <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl">
+              <input aria-invalid="false" autocomplete="off" name="email" required="" type="text"
+                class="MuiInputBase-input MuiOutlinedInput-input" value="" />
+            </div>
+          </div>
+          <div class="MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal">
+            <label
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined Mui-required Mui-required"
+              data-shrink="false">Password<span aria-hidden="true"
+                class="MuiFormLabel-asterisk MuiInputLabel-asterisk"> *</span></label>
+            <div
+              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd">
+              <input aria-invalid="false" autocomplete="new-password" name="password" required="" type="password"
+                class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                value="" />
+            </div>
+          </div>
+        </form>
       </div>
+    </div>
 
-      <!-------------------Coravin SignIn---------------------------->
+    <!-----------------------Coravin Sign In-------------------------->
 
-      <div id="signup" class="sub-field" style="display: none">
-        <div class="MuiBox-root jss707">
-          <div class="MuiBox-root jss708"></div>
-          <h2 class="MuiTypography-root jss7 MuiTypography-h5">
-            Create an Account
-          </h2>
-          <div class="MuiBox-root jss709"></div>
-          <form id="create-account" novalidate="" autocomplete="off">
-            <div
-              class="MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal"
-            >
+    <div id="signin" class="sub-field" style="display: none">
+      <div class="MuiBox-root jss656">
+        <h2 class="MuiTypography-root jss7 MuiTypography-h5">Login</h2>
+        <form>
+          <div class="MuiBox-root jss660">
+            <div class="MuiFormControl-root MuiTextField-root">
               <label
                 class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined Mui-required Mui-required"
-                data-shrink="false"
-                >First Name<span
-                  aria-hidden="true"
-                  class="MuiFormLabel-asterisk MuiInputLabel-asterisk"
-                  > *</span
-                ></label
-              >
-              <div
-                class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
-              >
-                <input
-                  aria-invalid="false"
-                  name="firstName"
-                  required=""
-                  type="text"
-                  class="MuiInputBase-input MuiOutlinedInput-input"
-                  value=""
-                />
-                <fieldset
-                  aria-hidden="true"
-                  class="jss279 MuiOutlinedInput-notchedOutline"
-                >
-                  <!-- <legend class="jss281"><span>First Name&nbsp;*</span></legend> -->
-                </fieldset>
+                data-shrink="false" for="email" id="email-label">Email<span aria-hidden="true"
+                  class="MuiFormLabel-asterisk MuiInputLabel-asterisk"> *</span></label>
+              <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl">
+                <input aria-invalid="false" autocomplete="email" id="email" name="email" required="" type="email"
+                  class="MuiInputBase-input MuiOutlinedInput-input" value="" />
               </div>
             </div>
-            <div
-              class="MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal"
-            >
+          </div>
+          <div class="MuiBox-root jss661">
+            <div class="MuiFormControl-root MuiTextField-root">
               <label
                 class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined Mui-required Mui-required"
-                data-shrink="false"
-                >Last Name<span
-                  aria-hidden="true"
-                  class="MuiFormLabel-asterisk MuiInputLabel-asterisk"
-                  > *</span
-                ></label
-              >
+                data-shrink="false" for="password" id="password-label">Password<span aria-hidden="true"
+                  class="MuiFormLabel-asterisk MuiInputLabel-asterisk"> *</span></label>
               <div
-                class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
-              >
-                <input
-                  aria-invalid="false"
-                  autocomplete="no"
-                  name="lastName"
-                  required=""
-                  type="text"
-                  class="MuiInputBase-input MuiOutlinedInput-input"
-                  value=""
-                />
-              </div>
-            </div>
-            <div
-              class="MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal"
-            >
-              <label
-                class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined Mui-required Mui-required"
-                data-shrink="false"
-                >Email<span
-                  aria-hidden="true"
-                  class="MuiFormLabel-asterisk MuiInputLabel-asterisk"
-                  > *</span
-                ></label
-              >
-              <div
-                class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
-              >
-                <input
-                  aria-invalid="false"
-                  autocomplete="off"
-                  name="email"
-                  required=""
-                  type="text"
-                  class="MuiInputBase-input MuiOutlinedInput-input"
-                  value=""
-                />
-              </div>
-            </div>
-            <div
-              class="MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal"
-            >
-              <label
-                class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined Mui-required Mui-required"
-                data-shrink="false"
-                >Password<span
-                  aria-hidden="true"
-                  class="MuiFormLabel-asterisk MuiInputLabel-asterisk"
-                  > *</span
-                ></label
-              >
-              <div
-                class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"
-              >
-                <input
-                  aria-invalid="false"
-                  autocomplete="new-password"
-                  name="password"
-                  required=""
+                class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd">
+                <input aria-invalid="false" autocomplete="current-password" id="password" name="password" required=""
                   type="password"
                   class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
-                  value=""
-                />
+                  value="" />
               </div>
             </div>
-            <div class="MuiBox-root jss715"></div>
-            <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-disableElevation MuiButton-fullWidth"
-              type="submit"
-            >
-              <span class="MuiButton-label">Create an Account</span
-              ><span class="MuiTouchRipple-root"></span>
-            </button>
-            <div class="MuiBox-root jss716"></div>
-            <div class="MuiBox-root jss717"></div>
-          </form>
-        </div>
-      </div>
-
-      <!-----------------------Coravin Sign In-------------------------->
-
-      <div id="signin" class="sub-field" style="display: none">
-        <div class="MuiBox-root jss656">
-          <p
-            class="MuiTypography-root MuiTypography-body1"
-            style="font-weight: 500; font-size: 1.375rem; line-height: 1.6"
-          >
-            Sign in
-          </p>
-          <form>
-            <div class="MuiBox-root jss660">
-              <div class="MuiFormControl-root MuiTextField-root">
-                <label
-                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined Mui-required Mui-required"
-                  data-shrink="false"
-                  for="email"
-                  id="email-label"
-                  >Email<span
-                    aria-hidden="true"
-                    class="MuiFormLabel-asterisk MuiInputLabel-asterisk"
-                    > *</span
-                  ></label
-                >
-                <div
-                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
-                >
-                  <input
-                    aria-invalid="false"
-                    autocomplete="email"
-                    id="email"
-                    name="email"
-                    required=""
-                    type="email"
-                    class="MuiInputBase-input MuiOutlinedInput-input"
-                    value=""
-                  />
-                  <!-- <fieldset
-            aria-hidden="true"
-            class="jss279 MuiOutlinedInput-notchedOutline"
-          >
-            <legend class="jss281"><span>Email&nbsp;*</span></legend>
-          </fieldset> -->
-                </div>
-              </div>
-            </div>
-            <div class="MuiBox-root jss661">
-              <div class="MuiFormControl-root MuiTextField-root">
-                <label
-                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined Mui-required Mui-required"
-                  data-shrink="false"
-                  for="password"
-                  id="password-label"
-                  >Password<span
-                    aria-hidden="true"
-                    class="MuiFormLabel-asterisk MuiInputLabel-asterisk"
-                    > *</span
-                  ></label
-                >
-                <div
-                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"
-                >
-                  <input
-                    aria-invalid="false"
-                    autocomplete="current-password"
-                    id="password"
-                    name="password"
-                    required=""
-                    type="password"
-                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
-                    value=""
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div class="MuiBox-root jss663">
-              <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-disableElevation MuiButton-fullWidth"
-                type="submit"
-                data-cy="loginButton"
-              >
-                <span class="MuiButton-label">Sign in</span
-                ><span class="MuiTouchRipple-root"></span>
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-
-      <!------------------------Coravin Forgot Password-------------------->
-      <div id="forgotpassword" class="sub-field" style="display: none">
-        <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6"
-        >
-          <div class="MuiBox-root jss849">
-            <form>
-              <div class="MuiBox-root jss850"></div>
-              <h2 class="MuiTypography-root jss7 MuiTypography-h5">
-                Reset password
-              </h2>
-              <div class="MuiBox-root jss851"></div>
-              <div class="MuiFormControl-root MuiTextField-root">
-                <label
-                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined Mui-required Mui-required"
-                  data-shrink="false"
-                  >Email<span
-                    aria-hidden="true"
-                    class="MuiFormLabel-asterisk MuiInputLabel-asterisk"
-                    > *</span
-                  ></label
-                >
-                <div
-                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
-                >
-                  <input
-                    aria-invalid="false"
-                    name="email"
-                    required=""
-                    type="email"
-                    class="MuiInputBase-input MuiOutlinedInput-input"
-                    value=""
-                  />
-                </div>
-              </div>
-              <div class="MuiBox-root jss852"></div>
-              <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-disableElevation MuiButton-fullWidth"
-                type="submit"
-              >
-                <span class="MuiButton-label">Submit</span
-                ><span class="MuiTouchRipple-root"></span>
-              </button>
-            </form>
           </div>
+        </form>
+      </div>
+    </div>
+
+    <!------------------------Coravin Forgot Password-------------------->
+    <div id="forgotpassword" class="sub-field" style="display: none">
+      <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6">
+        <div class="MuiBox-root jss849">
+          <form>
+            <div class="MuiBox-root jss850"></div>
+            <h2 class="MuiTypography-root jss7 MuiTypography-h5">
+              Reset password
+            </h2>
+            <div class="MuiBox-root jss851"></div>
+            <div class="MuiFormControl-root MuiTextField-root">
+              <label
+                class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined Mui-required Mui-required"
+                data-shrink="false">Email<span aria-hidden="true"
+                  class="MuiFormLabel-asterisk MuiInputLabel-asterisk"> *</span></label>
+              <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl">
+                <input aria-invalid="false" name="email" required="" type="email"
+                  class="MuiInputBase-input MuiOutlinedInput-input" value="" />
+              </div>
+            </div>
+            <div class="MuiBox-root jss852"></div>
+
+          </form>
         </div>
       </div>
     </div>
-  </body>
+
+    <!------------------------Coravin Checkout Information-------------------->
+    <div id="checkout" class="sub-field" style="display: none">
+      <h2 class="MuiTypography-root jss7 MuiTypography-h5">
+        Checkout Information
+      </h2>
+      <div class="MuiFormControl-root MuiTextField-root jss2991" style="background: white;><label
+          class=" MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated
+        MuiInputLabel-outlined Mui-required Mui-required" data-shrink="false" for="email" id="email-label">Email<span
+          aria-hidden="true" class="MuiFormLabel-asterisk MuiInputLabel-asterisk"> *</span></label>
+        <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl">
+          <input aria-invalid="false" autocomplete="email" id="email" required="" type="text" aria-label="Email"
+            class="MuiInputBase-input MuiOutlinedInput-input" value="" />
+        </div>
+      </div>
+
+      <div class="MuiBox-root jss2997">
+        <form>
+          <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 MuiGrid-justify-content-xs-space-between">
+            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6">
+              <div class="MuiFormControl-root MuiTextField-root" style="background: white">
+                <label
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+                  data-shrink="false" for="firstname" id="firstname-label">First Name *</label>
+                <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl">
+                  <input aria-invalid="false" autocomplete="given-name" id="firstname" type="text"
+                    aria-label="First Name" class="MuiInputBase-input MuiOutlinedInput-input" value="" />
+                </div>
+              </div>
+            </div>
+            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6">
+              <div class="MuiFormControl-root MuiTextField-root" style="background: white">
+                <label
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+                  data-shrink="false" for="lastname" id="lastname-label">Last Name *</label>
+                <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl">
+                  <input aria-invalid="false" autocomplete="family-name" id="lastname" type="text"
+                    aria-label="Last Name" class="MuiInputBase-input MuiOutlinedInput-input" value="" />
+                </div>
+              </div>
+            </div>
+            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12">
+              <div class="MuiFormControl-root MuiTextField-root" style="background: white">
+                <label
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+                  data-shrink="false" for="street1" id="street1-label">Address 1 *</label>
+                <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl">
+                  <input aria-invalid="false" autocomplete="off" id="street1" type="text" aria-label="Address 1 "
+                    class="MuiInputBase-input MuiOutlinedInput-input pac-target-input" value=""
+                    placeholder="Enter a location" />
+                </div>
+              </div>
+            </div>
+            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12">
+              <div class="MuiFormControl-root MuiTextField-root" style="background: white">
+                <label
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+                  data-shrink="false" for="street2" id="street2-label">Address 2</label>
+                <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl">
+                  <input aria-invalid="false" autocomplete="address-line2" id="street2" type="text"
+                    aria-label="Address 2" class="MuiInputBase-input MuiOutlinedInput-input" value="" />
+                </div>
+              </div>
+            </div>
+            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12">
+              <div class="MuiAutocomplete-root MuiAutocomplete-hasClearIcon MuiAutocomplete-hasPopupIcon"
+                role="combobox" aria-expanded="false">
+                <div class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth" style="background: white">
+                  <label
+                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+                    data-shrink="false" for="countryAuto" id="countryAuto-label">Country *</label>
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiAutocomplete-inputRoot MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd">
+                    <input aria-invalid="false" autocomplete="off" id="countryAuto" name="country" type="text"
+                      class="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                      aria-autocomplete="list" autocapitalize="none" spellcheck="false" value="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6">
+              <div class="MuiFormControl-root MuiTextField-root" style="background: white">
+                <label
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+                  data-shrink="false" for="city" id="city-label">City *</label>
+                <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl">
+                  <input aria-invalid="false" autocomplete="address-level2" id="city" type="text" aria-label="City"
+                    class="MuiInputBase-input MuiOutlinedInput-input" value="" />
+                </div>
+              </div>
+            </div>
+            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12">
+              <div class="MuiFormControl-root MuiTextField-root" style="background: white">
+                <label
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+                  data-shrink="false" for="telephone" id="telephone-label">Phone Number *</label>
+                <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl">
+                  <input aria-invalid="false" autocomplete="shipping tel" id="telephone" type="text"
+                    aria-label="Phone Number" class="MuiInputBase-input MuiOutlinedInput-input" value="" />
+                </div>
+              </div>
+            </div>
+            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12">
+              <div class="MuiFormControl-root MuiTextField-root" style="background: white">
+                <label
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+                  data-shrink="false" for="company" id="company-label">Company Name (optional)</label>
+                <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl">
+                  <input aria-invalid="false" autocomplete="organization" id="company" type="text"
+                    aria-label="Company Name (optional)" class="MuiInputBase-input MuiOutlinedInput-input" value="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!------------------------Coravin Card Information-------------------->
+    <div id="card" class="sub-field" style="display: none">
+      <form>
+      <input placeholder="Card number" autocomplete="cc-number" type="tel" name="credit-card-number"
+        id="credit-card-number">
+      <input placeholder="Expiration date (MM / YY)" autocomplete="cc-exp" type="tel" name="expiration" id="expiration"
+        placeholder="MM/YY">
+      <input placeholder="Security code" autocomplete="cc-csc" type="tel" name="cvv" id="cvv" placeholder="***"><br><br>
+      <button type="submit">Submit
+      </button>
+    </form>
+    </div>
+</body>
+
 </html>

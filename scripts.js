@@ -69,3 +69,17 @@ function validateExpiryDate(s) {
   
   return true;
 }
+document.addEventListener("DOMContentLoaded", function(event) { 
+let formsArray = Array.from(document.querySelectorAll("form"));
+for (var i = 0; i < formsArray.length; i++) {
+  // let elements = document.forms[i].elements;
+  //   console.log('form elements', elements);
+  formsArray[i].addEventListener('submit', (e) => {
+    e.stopPropagation();
+    console.log('form submit');
+    // alert("one");
+  });
+}
+});
+
+console.log('form');
