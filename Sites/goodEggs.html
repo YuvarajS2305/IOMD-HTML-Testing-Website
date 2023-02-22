@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>IOMD Testing Site</title>
+    <!-- Load external CSS styles -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="..\scripts.js"></script>
+</head>
+
+<body>
+    <br><br>
+    <h1>
+        <center>
+            <p class="center"><b>Good Eggs</b></p>
+        </center>
+    </h1><br>
+    <div id="goodeggs" class="field">
+        <div id="tab">
+            <div id="field">
+                <button class="subtab tablinks titlecontent" onclick="openSubComponent(event, 'goodeggssignup')">
+                    <h2><b>Sign Up</h2></b>
+                </button>
+
+                <button class="subtab tablinks titlecontent" onclick="openSubComponent(event, 'goodeggssignin')">
+                    <h2><b>Sign In</h2></b>
+                </button>
+
+                <button class="subtab tablinks titlecontent" onclick="openSubComponent(event, 'goodeggscheckout')">
+                    <h2><b>Checkout</h2></b>
+                </button>
+
+                <button class="subtab tablinks titlecontent" onclick="openSubComponent(event, 'goodeggspayment')">
+                    <h2><b>Payment</h2></b>
+                </button>
+
+                <button class="subtab tablinks titlecontent"
+                    onclick="openSubComponent(event, 'goodeggsforgotpassword')">
+                    <h2><b>Forgot Password</h2></b>
+                </button>
+
+            </div>
+            <br>
+
+            <!----------------------------------Good Eggs Sign In-------------------------------------------->
+
+            <div id="goodeggssignin" class="sub-field" style="display: none">
+                <form class="sign-in-form" data-testid="sign-in-form">
+                    <div class="sign-in-form__email-row">
+                        <div class="sign-in-form__field">
+                            <div class="sign-in-form__input-container"><input type="email" class="form-control"
+                                    name="email" value="" placeholder="Email"></div>
+                        </div>
+                    </div>
+                    <div class="sign-in-form__password-row">
+                        <div class="sign-in-form__field">
+                            <div class="sign-in-form__input-container"><input type="password" class="form-control"
+                                    name="password" value="" placeholder="Password">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!---------------------------------Good Eggs Sign Up--------------------------------------------->
+
+            <div id="goodeggssignup" class="sub-field" style="display: none">
+
+                <form class="sign-up-form">
+                    <div class="sign-up-form__first-name-column">
+                        <div class="sign-up-form__field"><input type="text" class="form-control" name="firstName"
+                                value="" placeholder="First Name"></div>
+                    </div>
+                    <div class="sign-up-form__last-name-column">
+                        <div class="sign-up-form__field"><input type="text" class="form-control" name="lastName"
+                                value="" placeholder="Last Name"></div>
+                    </div>
+                    <div class="sign-up-form__email-row">
+                        <div class="sign-up-form__field"><input type="email" class="form-control" name="email" value=""
+                                placeholder="Email"></div>
+                    </div>
+                    <div class="sign-up-form__password-row">
+                        <div class="sign-up-form__field"><input type="password" class="form-control" name="password"
+                                value="" placeholder="Password"></div>
+                </form>
+            </div>
+
+            <!---------------------------------Good Eggs Forgot Password------------------------------------->
+
+            <div id="goodeggsforgotpassword" class="sub-field" style="display: none">
+                <form class="reset-password-page__form">
+                    <div class="reset-password-page__form-row">
+                        <input type="email"
+                            class="form-control reset-password-page__form-row-input reset-password-page__form-row-input-email-address"
+                            name="email" value="" placeholder="Email address">                           
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
