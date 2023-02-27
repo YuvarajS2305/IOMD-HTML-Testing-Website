@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>IOMD Testing Site</title>
+    <!-- Load external CSS styles -->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="..\scripts.js"></script>
+  </head>
+
+  <script>
+    function loadXMLDoc() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        // if (this.readyState == 4 && this.status == 200) {
+        //   document.getElementById("amazonpayment").innerHTML =
+        //   this.responseText;
+        // }
+      };
+      xhttp.open("GET", "requestfile.txt", true);
+      xhttp.send();
+      //https://jsonplaceholder.typicode.com/todos/1
+    }
+  </script>
+
+  <body>
+    <center>
+      <p>Amazon</p>
+    </center>
+
+    <button
+      class="subtab tablinks titlecontent"
+      onclick="openSubComponent(event, 'amazonpayment')"
+    >
+      <h2><b>Payment</b></h2>
+    </button>
+
+    <div id="amazonpayment" class="sub-field" style="display: none">
+      <input
+        autocomplete="cc-number"
+        type="text"
+        name="cardnumber"
+        aria-label="Credit or debit card number"
+        placeholder="Card number"
+      /><br />
+      <input
+        autocomplete="cc-exp"
+        type="text"
+        name="exp-date"
+        aria-label="Credit or debit card expiration date"
+        placeholder="MM / YY"
+      /><br />
+      <input
+        autocomplete="cc-csc"
+        type="text"
+        name="cvc"
+        aria-label="Credit or debit card CVC/CVV"
+        placeholder="CVC"
+      /><br />
+      <input
+        autocomplete="postal-code"
+        type="text"
+        name="postal"
+        aria-label="ZIP"
+        placeholder="ZIP"
+      /><br /><br />
+
+      <button type="submit" onclick="loadXMLDoc()">Submit</button>
+    </div>
+  </body>
+</html>
