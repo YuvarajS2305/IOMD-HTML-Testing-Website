@@ -37,7 +37,8 @@
                     <h2><b>Payment</h2></b>
                 </button>
 
-                <button class="subtab tablinks titlecontent" onclick="openSubComponent(event, 'goodeggsforgotpassword')">
+                <button class="subtab tablinks titlecontent"
+                    onclick="openSubComponent(event, 'goodeggsforgotpassword')">
                     <h2><b>Forgot Password</h2></b>
                 </button>
 
@@ -87,14 +88,74 @@
                 </form>
             </div>
 
-            <!---------------------------------Good Eggs Forgot Password------------------------------------->
+             <!-------------------------------Good Eggs Checkout-------------------------------------------->
 
-            <div id="goodeggsforgotpassword" class="sub-field" style="display: none">
-                <form class="reset-password-page__form">
-                    <div class="reset-password-page__form-row">
-                        <input type="email"
-                            class="form-control reset-password-page__form-row-input reset-password-page__form-row-input-email-address"
-                            name="email" value="" placeholder="Email address">
+             <div id="goodeggscheckout" class="sub-field" style="display: none">
+
+                <form class="sign-up-form">
+                    <div class="sign-up-form__first-name-column">
+                        <div class="sign-up-form__field"><input class="form-control " name="firstName"
+                                placeholder="First Name" type="text" value="goood"></div>
+                    </div>
+                    <div class="sign-up-form__last-name-column">
+                        <div class="sign-up-form__field"><input class="form-control " name="lastName"
+                                placeholder="Last Name" type="text" value="egggs"></div>
+                    </div>
+                    <div class="sign-up-form__email-row">
+                        <div class="sign-up-form__field"><input class="form-control " name="email" placeholder="Email"
+                                type="email" value="ge001@gmail.com"></div>
+                    </div>
+                    <div class="sign-up-form__phone-row">
+                        <div class="sign-up-form__field"><input class="form-control invalid" name="phone"
+                                placeholder="Phone (for delivery reminders)" type="tel" value="">
+                        </div>
+                    </div>
+                </form>
+
+                <form class="delivery-address-form">
+                    <div class="delivery-address-form__line-item">
+                        <div class="delivery-address-form__gift-recipient-column">
+                            <div class="delivery-address-form__edit-header">Recipient First and Last Name</div>
+                            <div class="delivery-address-form__field"><input type="text" class="form-control"
+                                    placeholder="Recipient's First and Last Name" data-testid="giftRecipientName"
+                                    name="giftRecipientName" value=""></div>
+                        </div>
+                    </div>
+                    <div class="delivery-address-form__line-item">
+                        <div class="delivery-address-form__street-address-column">
+                            <div class="delivery-address-form__edit-header">Street Address</div>
+                            <div>
+                                <div class="geosuggest">
+                                    <div class="geosuggest__input-wrapper"><input class="geosuggest__input form-control"
+                                            id="geosuggest__input" type="text" placeholder="Street Address"
+                                            autocomplete="nope" tabindex="0" role="combobox" aria-expanded="false"
+                                            aria-owns="geosuggest__list" value=""></div>
+                                    <div class="geosuggest__suggests-wrapper">
+                                        <ul class="geosuggest__suggests geosuggest__suggests--hidden" role="listbox"
+                                            id="geosuggest__list"></ul>
+                                    </div>
+                                </div>
+                                <div class="address-autocomplete-input__error"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="delivery-address-form__line-item">
+                        <div class="delivery-address-form__gift-recipient-phone-column">
+                            <div class="delivery-address-form__edit-header">Recipient Phone</div>
+                            <div class="delivery-address-form__gift-recipient-phone-input"><input class="form-control"
+                                    type="tel" placeholder="Recipient's Phone Number" data-testid="recipientPhoneNumber"
+                                    name="giftRecipientPhone" value="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="delivery-address-form__line-item">
+                        <div class="delivery-address-form__gift-recipient-email-column">
+                            <div class="delivery-address-form__edit-header">Recipient Email</div>
+                            <div class="delivery-address-form__gift-recipient-email-input"><input class="form-control"
+                                    type="email" placeholder="Recipient's Email Address" name="giftRecipientEmail"
+                                    value="">
+                            </div>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -114,7 +175,25 @@
             </div>
 
 
+            <!---------------------------------Good Eggs Forgot Password------------------------------------->
+
+            <div id="goodeggsforgotpassword" class="sub-field" style="display: none">
+                <form class="reset-password-page__form">
+                    <div class="reset-password-page__form-row">
+                        <input type="email"
+                            class="form-control reset-password-page__form-row-input reset-password-page__form-row-input-email-address"
+                            name="email" value="" placeholder="Email address">
+                    </div>
+                </form>
+            </div>
+
+            
+           
+
+
+
         </div>
     </div>
 </body>
+
 </html>
